@@ -3,6 +3,12 @@
 //     final product = productFromJson(jsonString);
 
 import 'dart:convert';
+import 'package:flutter/material.dart';
+import 'package:http/http.dart' as http;
+import 'dart:convert';
+import 'package:shopping_list/models/product.dart';
+
+import 'package:shopping_list/widgets/left_drawer.dart';
 
 List<Product> productFromJson(String str) => List<Product>.from(json.decode(str).map((x) => Product.fromJson(x)));
 
